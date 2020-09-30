@@ -15,3 +15,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/posts/title-test.md
