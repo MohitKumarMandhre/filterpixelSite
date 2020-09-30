@@ -1,4 +1,5 @@
 .intro {
+  margin-top: 10vh;
   background: var(--color-theme-highlight-block);
 
   &__summary {
@@ -21,5 +22,11 @@
     &--compact {
       max-width: 20ex;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .intro{
+    margin-top: 20vh;
   }
 }

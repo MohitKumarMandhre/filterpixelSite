@@ -1,4 +1,11 @@
 .site-head {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-bg);
+  margin-bottom: 2rem;
   &__site-name {
     font-weight: 700;
     text-decoration: none;
