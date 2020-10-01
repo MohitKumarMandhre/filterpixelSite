@@ -1,7 +1,9 @@
 .site-head {
   position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
   align-items: center;
   width: 100%;
   background-color: var(--color-bg);
