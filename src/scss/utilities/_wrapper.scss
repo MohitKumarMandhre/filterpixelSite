@@ -10,6 +10,33 @@
   width: 100%;
 }
 
+.steps{
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: var(--color-slate);
+}
+
+.step{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+.flip{
+  flex-direction: row-reverse;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 5vw;
+}
+
 .wrapper-0 {
   margin: 0px !important;
 }

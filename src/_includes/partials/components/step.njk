@@ -1,0 +1,12 @@
+{% macro step(title, short_desc, long_desc, img_src, flip='') %}
+    <div class="step {{ flip }}">
+        <div class="info">
+            <h3>{{title}}</h3>
+            <h4>{{short_desc}}</h4>
+            <p>{{long_desc}}</p>
+        </div>
+        <div>
+            <img src="{{ img_src }}">
+        </div>
+    </div>
+{% endmacro %}
