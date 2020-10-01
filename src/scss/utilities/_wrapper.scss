@@ -74,7 +74,18 @@
 }
 
 @media (max-width: 450px) {
+
   .features{
+    flex-direction: column;
+  }
+  .step{
+    flex-direction: column;
+    padding-bottom: 12vh;
+  }
+  .info{
+    padding-bottom: 8vh;
+  }
+  .flip{
     flex-direction: column;
   }
   .feat{

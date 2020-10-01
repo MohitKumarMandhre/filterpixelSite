@@ -15,3 +15,19 @@
   }
   z-index: 999;
 }
+
+.site-head-new{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (max-width: 450px) { 
+  .site-head-new {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+

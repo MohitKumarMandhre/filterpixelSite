@@ -32,3 +32,12 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .nav{
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
