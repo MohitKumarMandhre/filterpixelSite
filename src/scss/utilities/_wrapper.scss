@@ -9,3 +9,48 @@
 .wrapper-100 {
   width: 100%;
 }
+
+.wrapper-0 {
+  margin: 0px !important;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-dark);
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 5vh;
+}
+
+.feat {
+  display: flex !important; 
+  flex-direction: column !important;
+  justify-content: space-between;
+}
+
+.img-center {
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .features{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .feat{
+    padding: 2vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .features{
+    flex-direction: column;
+  }
+  .feat{
+    padding: 8vw;
+  }
+}

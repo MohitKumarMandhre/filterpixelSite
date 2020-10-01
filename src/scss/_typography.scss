@@ -8,6 +8,14 @@
     url('/fonts/lora-v13-latin-700.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter'), url('/fonts/Inter-VariableFont.ttf') format('truetype');
+}
+
 body {
   // Strip the unit off the size ratio to generate a line height
   $line-height: get-size(600);
