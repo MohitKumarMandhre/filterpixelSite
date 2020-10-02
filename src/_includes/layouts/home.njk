@@ -18,11 +18,6 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <ul>
-      {% for item in collections.postFeed %}
-        <li>{{item.data.image}}</li>
-      {% endfor %}
-    </ul>
     {% include "partials/components/intro.njk" %}
     {% include "partials/components/steps-prop.njk" %}
     {% include "partials/components/post-list.njk" %}
