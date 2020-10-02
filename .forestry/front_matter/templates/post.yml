@@ -15,5 +15,11 @@ fields:
 - type: list
   name: tags
   label: tags
+- name: cover_image
+  type: file
+  config:
+    maxSize: 64
+  label: Cover Image
+  description: This image appears on thumbnails and as the beginning of each post.
 pages:
 - src/posts/title-test.md
