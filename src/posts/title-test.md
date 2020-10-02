@@ -3,6 +3,7 @@ date: 2020-09-30
 title: Title test
 tags:
 - photography
+cover_image: "/images/Import Image.png"
 
 ---
 # A simple starter kit for Eleventy
