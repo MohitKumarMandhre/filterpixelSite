@@ -6,3 +6,10 @@ tags:
 cover_image: "/images/Automate.png"
 
 ---
+# Test
+
+This is a blog post
+
+with an image![](/images/Automate.png)
+
+    We automate culling.
