@@ -1,0 +1,14 @@
+{% extends 'layouts/base.njk' %}
+{% import "partials/components/step.njk" as steps %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    {# {% include "partials/components/intro.njk" %} #}
+    <div class="mtop bg-slate pl pr">
+      <div class="steps">
+        {{ steps.step("The more you use it the better it gets", "", "Our AI algorithm is constantly learning. Welcome to the future of photography culling.", "/images/AI_learning.png", buttonFlag=true)}}
+      </div>
+      <div>vfvfvfv</div>
+    </div>
+  </main>
+{% endblock %}

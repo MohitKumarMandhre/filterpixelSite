@@ -1,9 +1,12 @@
-{% macro step(title, short_desc, long_desc, img_src, flip='') %}
+{% macro step(title, short_desc, long_desc, img_src, flip = '', buttonFlag = false) %}
     <div class="step {{ flip }}">
         <div class="info">
             <h3>{{title}}</h3>
             <h4>{{short_desc}}</h4>
             <p>{{long_desc}}</p>
+            {% if buttonFlag %}
+                <a class="[ button ] w-200 [ font-base text-base weight-regular ta-center ] mt-20" href="/signup">Watch the demo</a>
+            {% endif %}
         </div>
         <div>
             <img src="{{ img_src }}">

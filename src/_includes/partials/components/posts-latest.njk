@@ -2,12 +2,13 @@
   <section class="[ post-list ] [ pad-top-700 pad-bottom-900 ]">
     <div class=" [ steps ]">
       <h2 class="[ post-list__heading ] [ ta-center text-600 md:text-600 ]">{{ postListHeading }}</h2>
-      <ol class="[ post-list-cards-all ] [ sf-flow ] [ pad-top-300 ]" reversed="reversed">
+      <ol class="[ post-list-cards ] [ sf-flow ] [ pad-top-300 ]" reversed="reversed">
         {% for item in postListItems %}
           {% if item  
             .date
             .getTime() <= global
             .now
+            and loop.index <=4 
             %}
             <li class="post-list__item">
               <img class="thumbnail" src="{{item.data.cover_image}}">

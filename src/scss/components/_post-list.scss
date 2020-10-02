@@ -3,13 +3,13 @@
   &__item {
     display: flex;
     flex-direction: column;
-    margin: 2vw;
     background-color: var(--color-dark);
     box-sizing: border-box;
+    height: 40vh;
     width: 20vw;
     justify-content: flex-start;
     align-items: stretch;
-    margin: 0;
+    margin: 2vw;
   }
 
   &__link {
@@ -32,6 +32,17 @@
   align-items: stretch;
   background-color: var(--color-slate);
   padding: 2vw;
+  flex-wrap: nowrap;
+}
+
+.post-list-cards-all{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: var(--color-slate);
+  padding: 2vw;
+  flex-wrap: wrap;
 }
 
 .thumbnail{
