@@ -32,6 +32,7 @@ const Home = ({ entry }) => (
           date: new Date(),
           data: {
             title: 'Sample Post',
+            cover_image: 'images/demo-image-1.jpg'
           },
         }],
       },

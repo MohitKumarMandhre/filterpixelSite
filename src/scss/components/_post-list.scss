@@ -1,6 +1,8 @@
 .post-list {
   &__item {
-    --flow-space: #{get-size(700)};
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
   }
 
   &__link {
@@ -14,4 +16,11 @@
       text-decoration: underline;
     }
   }
+}
+
+.post-list-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
