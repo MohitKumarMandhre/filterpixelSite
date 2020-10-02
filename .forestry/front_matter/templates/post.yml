@@ -22,4 +22,5 @@ fields:
   label: Cover Image
   description: This image appears on thumbnails and as the beginning of each post.
 pages:
+- src/posts/another-post.md
 - src/posts/title-test.md
