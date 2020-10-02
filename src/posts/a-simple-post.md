@@ -5,6 +5,7 @@ tags:
 - demo-content
 - simple-post
 - blog
+cover_image: "/images/favicon.png"
 
 ---
 A simple post to demonstrate how a normal blog post looks on Hylia. Content is
