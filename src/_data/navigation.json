@@ -9,11 +9,6 @@
       "text": "Blog",
       "url": "/blog",
       "external": false
-    },
-    {
-      "text": "Sign Up",
-      "url": "/signup",
-      "external": false
     }
   ]
 }
