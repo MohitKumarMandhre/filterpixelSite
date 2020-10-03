@@ -27,6 +27,10 @@
 
 .flip{
   flex-direction: row-reverse;
+  .info{
+    padding-left: 5vw;
+    padding-right: 0;
+  }
 }
 
 .info{
@@ -35,6 +39,7 @@
   justify-content: center;
   align-items: left;
   padding: 5vw;
+  padding-left: 0;
 }
 
 .wrapper-0 {
@@ -66,6 +71,13 @@
   padding-right: 2vw;
 }
 
+.p-10 {
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
 .w-200{
   width: 200px;
 }
@@ -86,6 +98,31 @@
 
 .img-center {
   align-self: center;
+}
+
+.overlap-grid-center{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlap-grid-element-front{
+  z-index: 20;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.overlap-grid-element-back{
+	z-index: 1;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column: 1;
+}
+
+.blur{
+  opacity: 0.62;
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,10 @@
 {% extends 'layouts/base.njk' %}
 {% import "partials/components/step.njk" as steps %}
 
+{# Post list content #}
+{% set postListHeading = postsHeading %}
+{% set postListItems = collections.postFeed %}
+
 {% block content %}
   <main id="main-content" tabindex="-1">
     {# {% include "partials/components/intro.njk" %} #}
@@ -8,7 +12,47 @@
       <div class="steps">
         {{ steps.step("The more you use it the better it gets", "", "Our AI algorithm is constantly learning. Welcome to the future of photography culling.", "/images/AI_learning.png", buttonFlag=true)}}
       </div>
-      <div>vfvfvfv</div>
+      <div class="steps pad-top-900">
+        <div class="mt-20 pl pr pad-top-500">
+          <div class="mt-20 pl pr overlap-grid-center">
+            <div class="overlap-grid-element-front ta-center">
+              <h3>Photography culling has never been easier.</h3>
+            </div>
+            <div class="overlap-grid-element-back blur">
+              <img src="/images/product.png" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="steps pad-top-900">
+        <div class="inner-wrapper pad-top-900 mtop">
+          <h3 class="ta-center">Behind the scenes</h3>
+          <p class="ta-center">FilterPixel is constantly learning. It’s the photography app that gets better the more you use it.</p>
+        </div>
+        <div class="steps pl pr mtop">
+          <div class="p-10">
+            {{ steps.step("The power of import", "", "When importing your images, our app detects this process and quickly scans each image.", "/images/import.png")}}
+          </div>
+          <div class="p-10">
+            {{ steps.step("FilterPixel’s machine learning AI gets to work", "", "Using machine learning technology, FilterPixel learns to identify your photos faster with each new import.", "/images/ML-AI.png", "flip")}}
+          </div>
+          <div class="p-10">
+            {{ steps.step("The magic of refining", "", "By refining your photo cull, you’re able to tell FilterPixel exactly what your needs and preferences are.", "/images/Refining.png")}}
+          </div>
+          <div class="p-10">
+            {{ steps.step("Learning from the best", "", "By understanding your preferences, FilterPixel’s artificial intelligence learns to work the way you do", "/images/best.png", "flip")}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-slate pl pr">
+      <div class="mtop">
+        <h3 class="ta-center">Our latest updates</h3>
+        <p class="ta-center">Interesting articles and updates from the FilterPixel team.</p>
+      </div>
+      <div>
+        {% include "partials/components/posts-latest.njk" %}
+      </div>
     </div>
   </main>
 {% endblock %}
