@@ -2,7 +2,7 @@
 
 Hylia is a lightweight [Eleventy](https://11ty.io) starter kit with [Forestry CMS](https://forestry.io/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend it for yourself.
 
-[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=dirtyf/hylia&provider=github&branch=forestry&engine=other&preview=https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60)
+[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=GiZmoFalcon/fpvt&provider=github&branch=forestry&engine=other&preview=https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60)
 
 <img src="https://hankchizljaw.imgix.net/hylia-github.jpg?auto=format&q=60" width="550" />
 
@@ -65,7 +65,7 @@ npm run sass:tokens
 
 ## Getting started with the CMS
 
-[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=dirtyf/hylia&provider=github&branch=forestry&engine=other&preview=https://camo.githubusercontent.com/8bae59778d46d15e98e701d5b6f4d0cb3a2cb880/68747470733a2f2f68616e6b6368697a6c6a61772e696d6769782e6e65742f68796c69612d6769746875622e6a70673f6175746f3d666f726d617426713d3630)
+[![Import to Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=GiZmoFalcon/fpvt&provider=github&branch=forestry&engine=other&preview=https://camo.githubusercontent.com/8bae59778d46d15e98e701d5b6f4d0cb3a2cb880/68747470733a2f2f68616e6b6368697a6c6a61772e696d6769782e6e65742f68796c69612d6769746875622e6a70673f6175746f3d666f726d617426713d3630)
 
 Once the site is imported in Forestry, go to settings/previews to start the preview server.
 
