@@ -25,11 +25,11 @@ class ThemeToggle extends HTMLElement {
     return response;
   }
 
-  applySetting(passedSetting) {
+  applySetting(passedSetting='dark') {
     let currentSetting = passedSetting || localStorage.getItem(this.STORAGE_KEY);
 
     if (currentSetting) {
-      document.documentElement.setAttribute('data-user-color-scheme', currentSetting);
+      document.documentElement.setAttribute('data-user-color-scheme', 'dark');
       this.setButtonLabelAndStatus(currentSetting);
     } else {
       this.setButtonLabelAndStatus(this.getCSSCustomProp(this.COLOR_MODE_KEY));
