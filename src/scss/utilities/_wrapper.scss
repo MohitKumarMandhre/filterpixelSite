@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-right: 2vw;
   padding-left: 2vw;
 }
@@ -125,6 +126,11 @@
   opacity: 0.62;
 }
 
+.form-obj{
+  width: 30vw;
+  height: 60vh;
+}
+
 @media (max-width: 768px) {
   .features{
     padding-left: 5vw;
@@ -160,4 +166,20 @@
   .feat{
     padding: 12vw;
   }
+  .form-obj{
+    width: 90vw;
+    height: 90vh;
+  }
 }
+
+.radio:checked::before{
+  cursor: pointer;
+  position:absolute;
+  clip: rect(0,0,0,0);
+  clip: rect(0 0 0 0);
+}
+
+.radio:checked{
+  content: url('/images/radio-off.png');
+}
+

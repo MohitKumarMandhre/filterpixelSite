@@ -1,65 +1,51 @@
 {% extends 'layouts/base.njk' %}
+{% from "macros/form.njk" import label,
+field,
+textarea,
+radios,
+button %}
 
 {% block content %}
     <main id="main-content" tabindex="-1">
-        <div class="mtop wrapper pl pr">
-            <form action="https://filterpixel.us18.list-manage.com/subscribe/post?u=3c6ef38b3c08ca3f076824a80&amp;id=398b1c4b9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
-                <div id="mc_embed_signup_scroll">
-                    <div class="indicates-required">
-                        <span class="asterisk">*</span>
-                        indicates required</div>
-                    <div class="mc-field-group">
-                        <label for="mce-EMAIL">Email Address
-                            <span class="asterisk">*</span>
-                        </label>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required="">
+        <div class="mtop bg-slate pl pr">
+            <div class="steps p-10">
+                <div class="step">
+                    <div class="info">
+                        <div>
+                            {# <form name="contact" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+                                <ol class="[ field-list ]">
+                                    <li class="[ field-list__field-group ]">
+                                        {{ label("Name", "name") }}
+                                        {{ field( "text", "name", { required: true, placeholder: "Katherine Johnson", autocomplete: "name", autocorrect: "off", autocapitalize: "off" } ) }}
+                                    </li>
+                                    <li class="[ field-list__field-group ]">
+                                        {{ label("E-mail Address", "email") }}
+                                        {{ field( "email", "email", { required: true, placeholder: "katherine@johnson.tld", autocomplete: "email" } ) }}
+                                    </li>
+                                    <li class="[ field-list__field-group ]">
+                                        {{ label("Which Operating System do you primarily use?", "os") }}
+                                        {{ radios( "", "os", ['MacOS', 'Windows'], {  } ) }}
+                                    </li>
+                                    <li class="[ field-list__field-group ]">
+                                        {{ label("Are you a Lightroom user?", "lr-user") }}
+                                        {{ radios( "", "lr-user", ['Yes', 'No'], {  } ) }}
+                                    </li>
+                                    <li hidden="hidden">
+                                        <label>Don’t fill this out if you're human:
+                                            <input name="bot-field"/></label>
+                                    </li>
+                                </ol>
+                                {{ button("Submit") }}
+                            </form> #}
+                            <object class="form-obj"  data="https://cdn.forms-content.sg-form.com/2a3e0dc7-0408-11eb-b526-b2f60848b9dd">
+                            </object>
+                        </div>
                     </div>
-                    <div class="mc-field-group">
-                        <label for="mce-FNAME">Your Name
-                            <span class="asterisk">*</span>
-                        </label>
-                        <input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required="">
+                    <div>
+                        <img src="/images/best.png">
                     </div>
-                    <div class="mc-field-group size1of2">
-                        <label for="mce-PHONE">Phone Number
-                        </label>
-                        <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
-                    </div>
-                    <div class="mc-field-group input-group">
-                        <strong>Operating System
-                        </strong>
-                        <ul>
-                            <span><input type="radio" value="MacOS" name="MMERGE2" id="mce-MMERGE2-0">
-                                <label for="mce-MMERGE2-0">MacOS</label>
-                            </span>
-                            <span><input type="radio" value="Windows" name="MMERGE2" id="mce-MMERGE2-1">
-                                <label for="mce-MMERGE2-1">Windows</label>
-                            </span>
-                            <span><input type="radio" value="Other" name="MMERGE2" id="mce-MMERGE2-2">
-                                <label for="mce-MMERGE2-2">Other</label>
-                            </span>
-                        </ul>
-                    </div>
-                    <div class="mc-field-group input-group">
-                        <strong>Are you using Adobe Lightroom?
-                        </strong>
-                        <ul>
-                            <span><input type="radio" value="Yes" name="MMERGE3" id="mce-MMERGE3-0">
-                                <label for="mce-MMERGE3-0">Yes</label>
-                            </span>
-                            <span><input type="radio" value="No" name="MMERGE3" id="mce-MMERGE3-1">
-                                <label for="mce-MMERGE3-1">No</label>
-                            </span>
-                        </ul>
-                    </div>
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c6ef38b3c08ca3f076824a80_398b1c4b9a" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn btn-gradient btn-submit theme-btn mx-auto" disabled=""></div>
                 </div>
-            </form>
+            </div>
         </div>
     </main>
 {% endblock %}

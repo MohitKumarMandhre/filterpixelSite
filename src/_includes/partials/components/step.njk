@@ -1,5 +1,5 @@
-{% macro step(title, short_desc, long_desc, img_src, flip = '', buttonFlag = false) %}
-    <div class="step {{ flip }}">
+{% macro step(title, short_desc, long_desc, img_src, flip = '', buttonFlag = false, auxCls = '') %}
+    <div class="step {{ flip }} {{ auxCls }}">
         <div class="info">
             <h3>{{title}}</h3>
             <h4>{{short_desc}}</h4>
