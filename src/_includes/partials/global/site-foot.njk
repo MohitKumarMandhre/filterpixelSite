@@ -1,18 +1,55 @@
 <footer role="contentinfo" class="[ site-foot ] [ pad-top-700 pad-bottom-900 ]">
-  <div class="wrapper">
+  <div class="p-10">
     <div class="[ site-foot__inner ] [ md:box-flex space-between align-start ]">
       {% if site.shortDesc %}
-        <div>
+        <div class="sf-left">
           <article class="[ site-foot__details ] [ sf-flow measure-compact ]">
-            <h2 class="font-base text-600">{{ site.name }}</h2>
+            <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">
+              <img src="/images/Logo.svg" alt="FilterPixel">
+            </span>
             {{ site.shortDesc | markdownFilter | safe }}
           </article>
+          <div class="sf-left-media">
+            <div class="sf-left-media-item">
+              <a href="https://www.instagram.com/filterpixel/" target="_blank">
+                <img src="/images/instagram.svg">
+              </a>
+            </div>
+            <div class="sf-left-media-item">
+              <a href="https://twitter.com/FilterPixelHQ" target="_blank">
+                <img src="/images/twitter.svg">
+              </a>
+            </div>
+            <div class="sf-left-media-item">
+              <a href="https://www.linkedin.com/company/filterpixel" target="_blank">
+                <img src="/images/linkedin.svg">
+              </a>
+            </div>
+            <div class="sf-left-media-item">
+              <a href="https://www.facebook.com/filterpixel/" target="_blank">
+                <img src="/images/facebook.svg">
+              </a>
+            </div>
+          </div>
         </div>
       {% endif %}
-      <div>
+      <div class="sf-box">
         {% set ariaLabel = 'footer navigation' %}
-        
-        <theme-toggle></theme-toggle>
+        <div class="sf-box-item">
+          <h4>Product</h4>
+          <a href="/signup">Beta Access</a>
+        </div>
+        <div class="sf-box-item">
+          <h4>Resources</h4>
+          <a href="blog">Blog</a>
+        </div>
+        <div class="sf-box-item">
+          <h4>About</h4>
+          <a href="/signup">Contact Us</p>
+        </div>
+        <div class="sf-box-item">
+          <theme-toggle></theme-toggle>
+        </div>
       </div>
     </div>
     {% if site.showThemeCredit %}

@@ -3,13 +3,16 @@
   <div class="wrapper-100">
     <div class="[ site-head-new ] [ md:box-flex space-between align-center ]">
       <a href="/" class="[ site-head__site-name ] [ leading-tight ]">
-        <span class="visually-hidden">{{ site.name }} - Home</span>
+        <span class="visually-hidden">{{ site.name }}
+          - Home</span>
         <span class="[ site-head__site-name ] [ text-600 ]" aria-hidden="true">
           <img src="/images/Logo.svg" alt="FilterPixel">
         </span>
       </a>
-      {% set ariaLabel = 'navigation' %}
-      {% include "partials/components/nav.njk" %}
+      <div>
+        {% set ariaLabel = 'navigation' %}
+        {% include "partials/components/nav.njk" %}
+      </div>
     </div>
   </div>
 </header>
