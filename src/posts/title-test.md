@@ -1,6 +1,6 @@
 ---
 date: 2020-09-30
-title: Title test 12
+title: Title test 14
 tags:
 - photography
 cover_image: "/images/Import Image.png"
@@ -8,7 +8,7 @@ cover_image: "/images/Import Image.png"
 ---
 # A simple starter kit for Eleventy
 
-Hylia is a lightweight [Eleventy](https://11ty.io/) starter kit with [Forestry CMS](https://forestry.io/) pre-configured, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend yourself.
+Hylia is a lightweight [Eleventy](https://11ty.io/) starter kit with [Forestry CMS](https://forestry.io/) pre-configure, so that you can one-click install a progressive, accessible blog in minutes. It also gives you a well organised starting point to extend yourself.
 
 Get started now by [deploying Hylia to Netlify.](https://app.netlify.com/start/deploy?repository=https://github.com/dirtyf/hylia)
 
